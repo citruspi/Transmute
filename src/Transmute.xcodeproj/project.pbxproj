@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0CB856315DFFC2700ADFF16 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CB856215DFFC2700ADFF16 /* Cocoa.framework */; };
+		B0CB856D15DFFC2700ADFF16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0CB856B15DFFC2700ADFF16 /* InfoPlist.strings */; };
+		B0CB856F15DFFC2700ADFF16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CB856E15DFFC2700ADFF16 /* main.m */; };
+		B0CB857315DFFC2700ADFF16 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B0CB857115DFFC2700ADFF16 /* Credits.rtf */; };
+		B0CB857615DFFC2800ADFF16 /* TM_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CB857515DFFC2800ADFF16 /* TM_AppDelegate.m */; };
+		B0CB857915DFFC2800ADFF16 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0CB857715DFFC2800ADFF16 /* MainMenu.xib */; };
+		B0CB858015DFFC4200ADFF16 /* transmute.icns in Resources */ = {isa = PBXBuildFile; fileRef = B0CB857F15DFFC4200ADFF16 /* transmute.icns */; };
+		B0CB858B15E0025200ADFF16 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = B0CB858A15E0025200ADFF16 /* note.png */; };
+		B0CB858D15E02BCA00ADFF16 /* Linen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0CB858C15E02BCA00ADFF16 /* Linen.jpg */; };
+		B0CB858F15E0468800ADFF16 /* info-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0CB858E15E0468800ADFF16 /* info-icon.png */; };
+		B0CB859115E0480E00ADFF16 /* download-cli.png in Resources */ = {isa = PBXBuildFile; fileRef = B0CB859015E0480E00ADFF16 /* download-cli.png */; };
+		B0CB859315E048CD00ADFF16 /* Skip_CLI.png in Resources */ = {isa = PBXBuildFile; fileRef = B0CB859215E048CD00ADFF16 /* Skip_CLI.png */; };
+		B0D3E84115E06055004549A9 /* TM_Drop_Files.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D3E84015E06055004549A9 /* TM_Drop_Files.m */; };
+		B0D3E84615E0B4A8004549A9 /* arrow_2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D3E84515E0B4A8004549A9 /* arrow_2.png */; };
+		B0D3E84815E0B781004549A9 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D3E84715E0B781004549A9 /* arrow.png */; };
+		B0D3E85315E17033004549A9 /* kindlegen in CopyFiles */ = {isa = PBXBuildFile; fileRef = B0CB858215DFFC9000ADFF16 /* kindlegen */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0D3E85215E16F02004549A9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				B0D3E85315E17033004549A9 /* kindlegen in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B0CB855E15DFFC2700ADFF16 /* Transmute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transmute.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0CB856215DFFC2700ADFF16 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B0CB856515DFFC2700ADFF16 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B0CB856615DFFC2700ADFF16 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B0CB856715DFFC2700ADFF16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B0CB856A15DFFC2700ADFF16 /* Transmute-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Transmute-Info.plist"; sourceTree = "<group>"; };
+		B0CB856C15DFFC2700ADFF16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B0CB856E15DFFC2700ADFF16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0CB857015DFFC2700ADFF16 /* Transmute-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Transmute-Prefix.pch"; sourceTree = "<group>"; };
+		B0CB857215DFFC2700ADFF16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B0CB857415DFFC2700ADFF16 /* TM_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TM_AppDelegate.h; sourceTree = "<group>"; };
+		B0CB857515DFFC2800ADFF16 /* TM_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TM_AppDelegate.m; sourceTree = "<group>"; };
+		B0CB857815DFFC2800ADFF16 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B0CB857F15DFFC4200ADFF16 /* transmute.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = transmute.icns; sourceTree = "<group>"; };
+		B0CB858215DFFC9000ADFF16 /* kindlegen */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = kindlegen; sourceTree = "<group>"; };
+		B0CB858A15E0025200ADFF16 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		B0CB858C15E02BCA00ADFF16 /* Linen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Linen.jpg; sourceTree = "<group>"; };
+		B0CB858E15E0468800ADFF16 /* info-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-icon.png"; sourceTree = "<group>"; };
+		B0CB859015E0480E00ADFF16 /* download-cli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download-cli.png"; sourceTree = "<group>"; };
+		B0CB859215E048CD00ADFF16 /* Skip_CLI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Skip_CLI.png; sourceTree = "<group>"; };
+		B0D3E83F15E06055004549A9 /* TM_Drop_Files.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TM_Drop_Files.h; sourceTree = "<group>"; };
+		B0D3E84015E06055004549A9 /* TM_Drop_Files.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TM_Drop_Files.m; sourceTree = "<group>"; };
+		B0D3E84515E0B4A8004549A9 /* arrow_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_2.png; sourceTree = "<group>"; };
+		B0D3E84715E0B781004549A9 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0CB855B15DFFC2700ADFF16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0CB856315DFFC2700ADFF16 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0CB855315DFFC2700ADFF16 = {
+			isa = PBXGroup;
+			children = (
+				B0CB857F15DFFC4200ADFF16 /* transmute.icns */,
+				B0CB856815DFFC2700ADFF16 /* Transmute */,
+				B0CB856115DFFC2700ADFF16 /* Frameworks */,
+				B0CB855F15DFFC2700ADFF16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0CB855F15DFFC2700ADFF16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0CB855E15DFFC2700ADFF16 /* Transmute.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0CB856115DFFC2700ADFF16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0CB856215DFFC2700ADFF16 /* Cocoa.framework */,
+				B0CB856415DFFC2700ADFF16 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0CB856415DFFC2700ADFF16 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0CB856515DFFC2700ADFF16 /* AppKit.framework */,
+				B0CB856615DFFC2700ADFF16 /* CoreData.framework */,
+				B0CB856715DFFC2700ADFF16 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B0CB856815DFFC2700ADFF16 /* Transmute */ = {
+			isa = PBXGroup;
+			children = (
+				B0CB859415E04B7500ADFF16 /* Images */,
+				B0CB857415DFFC2700ADFF16 /* TM_AppDelegate.h */,
+				B0CB857515DFFC2800ADFF16 /* TM_AppDelegate.m */,
+				B0CB857715DFFC2800ADFF16 /* MainMenu.xib */,
+				B0D3E83F15E06055004549A9 /* TM_Drop_Files.h */,
+				B0D3E84015E06055004549A9 /* TM_Drop_Files.m */,
+				B0CB856915DFFC2700ADFF16 /* Supporting Files */,
+			);
+			path = Transmute;
+			sourceTree = "<group>";
+		};
+		B0CB856915DFFC2700ADFF16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0CB858215DFFC9000ADFF16 /* kindlegen */,
+				B0CB856A15DFFC2700ADFF16 /* Transmute-Info.plist */,
+				B0CB856B15DFFC2700ADFF16 /* InfoPlist.strings */,
+				B0CB856E15DFFC2700ADFF16 /* main.m */,
+				B0CB857015DFFC2700ADFF16 /* Transmute-Prefix.pch */,
+				B0CB857115DFFC2700ADFF16 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0CB859415E04B7500ADFF16 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B0D3E84515E0B4A8004549A9 /* arrow_2.png */,
+				B0D3E84715E0B781004549A9 /* arrow.png */,
+				B0CB858A15E0025200ADFF16 /* note.png */,
+				B0CB858E15E0468800ADFF16 /* info-icon.png */,
+				B0CB859215E048CD00ADFF16 /* Skip_CLI.png */,
+				B0CB859015E0480E00ADFF16 /* download-cli.png */,
+				B0CB858C15E02BCA00ADFF16 /* Linen.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0CB855D15DFFC2700ADFF16 /* Transmute */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0CB857C15DFFC2800ADFF16 /* Build configuration list for PBXNativeTarget "Transmute" */;
+			buildPhases = (
+				B0CB855A15DFFC2700ADFF16 /* Sources */,
+				B0CB855B15DFFC2700ADFF16 /* Frameworks */,
+				B0CB855C15DFFC2700ADFF16 /* Resources */,
+				B0D3E85215E16F02004549A9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Transmute;
+			productName = Transmute;
+			productReference = B0CB855E15DFFC2700ADFF16 /* Transmute.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0CB855515DFFC2700ADFF16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TM_;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "The Royal Panda Company";
+			};
+			buildConfigurationList = B0CB855815DFFC2700ADFF16 /* Build configuration list for PBXProject "Transmute" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B0CB855315DFFC2700ADFF16;
+			productRefGroup = B0CB855F15DFFC2700ADFF16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0CB855D15DFFC2700ADFF16 /* Transmute */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0CB855C15DFFC2700ADFF16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0CB856D15DFFC2700ADFF16 /* InfoPlist.strings in Resources */,
+				B0CB857315DFFC2700ADFF16 /* Credits.rtf in Resources */,
+				B0CB857915DFFC2800ADFF16 /* MainMenu.xib in Resources */,
+				B0CB858015DFFC4200ADFF16 /* transmute.icns in Resources */,
+				B0CB858B15E0025200ADFF16 /* note.png in Resources */,
+				B0CB858D15E02BCA00ADFF16 /* Linen.jpg in Resources */,
+				B0CB858F15E0468800ADFF16 /* info-icon.png in Resources */,
+				B0CB859115E0480E00ADFF16 /* download-cli.png in Resources */,
+				B0CB859315E048CD00ADFF16 /* Skip_CLI.png in Resources */,
+				B0D3E84615E0B4A8004549A9 /* arrow_2.png in Resources */,
+				B0D3E84815E0B781004549A9 /* arrow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0CB855A15DFFC2700ADFF16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0CB856F15DFFC2700ADFF16 /* main.m in Sources */,
+				B0CB857615DFFC2800ADFF16 /* TM_AppDelegate.m in Sources */,
+				B0D3E84115E06055004549A9 /* TM_Drop_Files.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B0CB856B15DFFC2700ADFF16 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0CB856C15DFFC2700ADFF16 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B0CB857115DFFC2700ADFF16 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0CB857215DFFC2700ADFF16 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B0CB857715DFFC2800ADFF16 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0CB857815DFFC2800ADFF16 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0CB857A15DFFC2800ADFF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B0CB857B15DFFC2800ADFF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B0CB857D15DFFC2800ADFF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transmute/Transmute-Prefix.pch";
+				INFOPLIST_FILE = "Transmute/Transmute-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B0CB857E15DFFC2800ADFF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transmute/Transmute-Prefix.pch";
+				INFOPLIST_FILE = "Transmute/Transmute-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0CB855815DFFC2700ADFF16 /* Build configuration list for PBXProject "Transmute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0CB857A15DFFC2800ADFF16 /* Debug */,
+				B0CB857B15DFFC2800ADFF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0CB857C15DFFC2800ADFF16 /* Build configuration list for PBXNativeTarget "Transmute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0CB857D15DFFC2800ADFF16 /* Debug */,
+				B0CB857E15DFFC2800ADFF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0CB855515DFFC2700ADFF16 /* Project object */;
+}
