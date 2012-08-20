@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Transmute by TheRealMihir</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Transmute</h1>
+          <h2>A sexy OS X wrapper for the Calibre CLI and kindlegen.</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/TheRealMihir/Transmute/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/TheRealMihir/Transmute/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/TheRealMihir/Transmute" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>What is Transmute?</h1>
+
+<p>Transmute is a lightweight, OS X wrapper for the <code>Calibre CLI</code> and for <code>kindlegen</code> which converts ebooks of various file types to the <code>MobiPocket</code> type. (I have a Kindle ♥).</p>
+
+<h1>Why?</h1>
+
+<p>Obviously, Transmute is no marvel. It's not a converter per se, its a wrapper for two other converters. But, its easy and simple and I like it. </p>
+
+<p>Calibre's UI is a mess. It's clunky and not very "Mac-Like". It makes libraries with copies of all the books you import and convert.</p>
+
+<p>I prefer to convert the <code>.epub</code>, copy the <code>.mobi</code> to my Kindle, and then delete the original. </p>
+
+<p>So, I used the <code>Calibre CLI</code>. But, many people <strong>don't like Calibre</strong> AND <strong>don't like the command line</strong>. So, I wrote Transmute, a wrapper for the CLI which makes everyone happy. </p>
+
+<p><em>Transmute isn't dependent on the installation of the Calibre CLI. If the user doesn't want to install it, Transmute is bundled with a copy of kindlegen (by Amazon) and it uses that.</em></p>
+
+<h1>Screenshots</h1>
+
+<p>Main Window (for Conversions):</p>
+
+<p><img src="http://i.imgur.com/YzKJO.png" alt="Conversion"></p>
+
+<hr><p>Warning Window (if Calibre CLI isn't installed):</p>
+
+<p><img src="http://i.imgur.com/IaL2X.png" alt="Warning"></p>
+
+<h1>Usage/Installation</h1>
+
+<h2>Transmute</h2>
+
+<p>Transmute is provided as an Xcode project. Developers, you know what to do. </p>
+
+<p><em>If you're not a developer and have absolutely NO IDEA what to do, just shoot me an email.</em></p>
+
+<h2>Calibre</h2>
+
+<p>If the Calibre CLI isn't installed and you chose to download it, you were brought to this page. Here's the deal:</p>
+
+<ul>
+<li>Download Calibre from <a href="http://calibre-ebook.com">http://calibre-ebook.com</a>.</li>
+<li>Install it and set it up</li>
+<li>(In the menu) Go to <code>calibre --&gt; Preferences</code>
+</li>
+<li>(In the sheet that drops down) Go to <code>Advanced --&gt; Miscellaneous --&gt; Install command line tools</code>
+</li>
+<li>Done!</li>
+</ul><h2>kindlegen</h2>
+
+<p>kindlegen comes bundled with the Transmute app. It's copied into the <code>Resources</code> directory of the app bundle.</p>
+
+<h1>"Workflow"</h1>
+
+<pre><code>if (calibre_cli not installed){
+    if (users wants to install){
+        open(URL);
+        quit(app);
+    }
+
+    else{
+        if(kindlegen not installed){
+            copy(kindlegen);
+        }
+    }                 
+}
+</code></pre>
+
+<h1>Compatible File Types</h1>
+
+<table>
+<tr>
+<th align="left">File Type</th>
+<th align="center">Calibre CLI</th>
+<th align="left">Transmute (kindlegen)</th>
+</tr>
+<tr>
+<td align="left">azw4</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">chm</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">djvu</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">epub</td>
+<td align="center">✓</td>
+<td align="left">✓</td>
+</tr>
+<tr>
+<td align="left">fb2</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">htlz</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">htm</td>
+<td align="center">✘</td>
+<td align="left">✓</td>
+</tr>
+<tr>
+<td align="left">html</td>
+<td align="center">✓</td>
+<td align="left">✓</td>
+</tr>
+<tr>
+<td align="left">lit</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">lrf</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">mobi</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">odt</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">opf</td>
+<td align="center">✘</td>
+<td align="left">✓</td>
+</tr>
+<tr>
+<td align="left">pdb</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">pdf</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">pml</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">rb</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">rtf</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">snb</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">tcr</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">txt</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">txtz</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+<tr>
+<td align="left">azw3</td>
+<td align="center">✓</td>
+<td align="left">✘</td>
+</tr>
+</table><h1>License</h1>
+
+<p>The <strong>code</strong> for Transmute is licensed under a WTFPL - do what the fuck you want to do. The terms are as follows:</p>
+
+<pre><code>         DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, December 2004
+
+ Copyright (C) 2012 The Royal Panda Company &lt;mihir@royalpanda.co&gt;
+
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
+</code></pre>
+
+<p>However, there are some other licenses for the graphics. Read more at the Credits section.</p>
+
+<h1>Credits</h1>
+
+<ul>
+<li>
+<a href="https://github.com/TheRealMihir">TheRealMihir</a> started and maintains the project.</li>
+<li>The graphics (note, info icon, buttons, arrow) are from <a href="http://premiumpixels.com">Premium Pixels</a>.</li>
+</ul><p>I've included all the graphics in the "graphics" folder. I'm on a Mac and I use <a href="http://pixelmator.com">Pixelmator</a> for graphic editing - the images are <code>.pxm</code> files.</p>
+
+<p>At the time of writing this, the license for graphics from Premium Pixels is:</p>
+
+<pre><code>All resources made available on Premium Pixels, including but not limited to, icons, images, brushes, shapes, layer styles, layered PSD’s, patterns, textures, web elements and themes are free for use in both personal and commercial projects.
+
+You may freely use my resources, without restriction, in software programs, web templates and other materials intended for sale or distribution. No attribution or backlinks are strictly required, but play the game, it’s always nice to be credited for your work. Any form of spreading the word is always appreciated!
+</code></pre>
+
+<p>So, don't be a jerk. Leave a link.</p>
+
+<ul>
+<li>The icon is from <a href="http://www.psdgraphics.com/">PSD Graphics</a>. </li>
+</ul><p>To use the icon commercially, you must pay for a commercial license <a href="http://www.psdgraphics.com/commercial-use/">here</a>. I have already purchased a license.</p>
+
+<h1>Contribute</h1>
+
+<p>Want to contribute? We'd love to have you on board.</p>
+        </section>
+
+        <footer>
+          Transmute is maintained by <a href="https://github.com/TheRealMihir">TheRealMihir</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
