@@ -75,12 +75,15 @@ The graphics (note, info icon, buttons, arrow) are from [Premium Pixels](http://
 At the time of writing this, the license for graphics from Premium Pixels is:
 
 ```
-All resources made available on Premium Pixels, including but not limited to, icons, images, brushes, shapes, layer styles, layered PSD’s, patterns, textures, web elements and themes are free for use in both personal and commercial projects.
+All resources made available on Premium Pixels, including but not limited to, icons, 
+images, brushes, shapes, layer styles, layered PSD’s, patterns, textures, web elements
+and themes are free for use in both personal and commercial projects.
 
-You may freely use my resources, without restriction, in software programs, web templates and other materials intended for sale or distribution. No attribution or backlinks are strictly required, but play the game, it’s always nice to be credited for your work. Any form of spreading the word is always appreciated!
+You may freely use my resources, without restriction, in software programs, web templates 
+and other materials intended for sale or distribution. No attribution or backlinks are 
+strictly required, but play the game, it’s always nice to be credited for your work. Any 
+form of spreading the word is always appreciated!
 ```
-
-So, don't be a jerk. Leave a link.
 
 * The icon is from [PSD Graphics](http://www.psdgraphics.com/). 
 
